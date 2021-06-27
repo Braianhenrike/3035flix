@@ -10,7 +10,7 @@
 <!-- gifs -->
 <h4 align="center">
  <p>vídeo de demonstração</p>
- <p>o video de demonstração do app esta no arquivo img, 20210627_165959.mp4</p>
+	<p><a href"../img/20210627_165959.mp4"</a>
   
  ---
  
