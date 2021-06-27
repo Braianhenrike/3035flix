@@ -1,0 +1,135 @@
+:root {
+    --primary-color: #0c5091;
+    --secondary-color: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--primary-color);
+    font-family: 'Popins', sans-serif;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--secondary-color);
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+}
+
+.category{
+    color: #fff;
+    margin-right: 700px;
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.form-group{
+    background-color: transparent;
+    padding: 1rem 1rem;
+    font-size: 1rem;
+}
+#inputValue:focus{
+    outline: 0;
+    background-color: var(--primary-color);
+}
+
+.btn {
+    color:rgba(245, 245, 245, 0.575);
+    background-color: transparent;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+    font-size: 0.9rem;
+    
+    
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.movie {
+    width: 300px;
+    margin: 1rem;
+    border-radius: 3px;
+    box-shadow: 0.2px 4px 5px rgb(0, 0, 0, 0.1);
+    background-color: var(--secondary-color);
+    position: relative;
+    overflow: hidden;
+}
+
+.movie img {
+    width: 100%;
+}
+
+img:hover{
+    margin-left: 0 40px;
+    transform:scale(1.2);
+    cursor: pointer;
+}
+
+.movie-info {
+    color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.2rem 2rem ;
+    letter-spacing: 0.5px;
+}
+
+.movie-info h3 {
+    margin-top: 0;
+}
+
+.movie-info span {
+    background-color: var(--primary-color);
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.movie-info span.green {
+    color: rgb(31, 204, 31);
+}
+
+.movie-info span.orange {
+    color: orange;
+}
+
+.movie-info span.red {
+    color: red;
+}
+.overview{
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:rgb(107, 84, 194);
+    padding: 1rem;
+    max-height: 100%;
+    transform:translateY(101%);
+    transition:transform 0.3s ease-in;
+}
+
+.movie:hover .overview{
+    transform:translateY(0)
+}
+
+
