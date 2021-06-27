@@ -10,7 +10,7 @@
 <!-- gifs -->
 <h4 align="center">
  <p>vídeo de demonstração</p>
-	20210627_165959.mp4
+	<a href="https://github.com/Braianhenrike/3035flix/blob/main/img/20210627_165959.mp4"></a>
   
  ---
  
