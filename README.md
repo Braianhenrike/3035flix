@@ -9,8 +9,8 @@
 
 <!-- gifs -->
 <h4 align="center">
- <p>vídeo de demonstração</p>
-	<a href="https://github.com/Braianhenrike/3035flix/blob/main/img/20210627_165959.mp4"></a>
+ <p>vídeo de demonstração está em img, é o aquivo em mp4, vc deve fazer o dowload dele</p>
+	
   
  ---
  
