@@ -10,7 +10,7 @@
 <!-- gifs -->
 <h4 align="center">
  <p>vídeo de demonstração</p>
-	<p><a href"../img/20210627_165959.mp4"</a>
+	20210627_165959.mp4
   
  ---
  
