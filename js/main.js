@@ -26,6 +26,7 @@ buttonElement.onclick = function(event) {
             return getMovies(API_URL)
         }
     }
+    console.log(API_URL)
 
 
 getMovies(API_URL)
@@ -46,7 +47,7 @@ function showMovies(data) {
     data.sort((a, b) => (a.vote_average > b.vote_average) ? -1 : 1)
 
     data.forEach(movie => {
-        const { title, poster_path, vote_average,overview, id } = movie
+        const { title, poster_path, vote_average,overview, release_date } = movie
         const movieEl = document.createElement('div')
         movieEl.classList.add('movie')
         movieEl.innerHTML = `
@@ -55,12 +56,13 @@ function showMovies(data) {
           <div class="movie-info">
               <h3>${title}</h3>
               <span class="${getColor(vote_average)}">${vote_average}</span>
+              <p>${release_date}</p>
           </div>
           <div class="overview">
           <h3>Overview</h3>
           ${overview}
-          
       </div>
+      
       
       `
         main.appendChild(movieEl)
