@@ -9,10 +9,6 @@ const buttonElement = document.querySelector('#search')
 const inputElement = document.querySelector('#inputValue')
 const imgElement = document.querySelector('#main')
 
-imgElement.onclick = function(event){
-    console.log('oi')
-}
-
 buttonElement.onclick = function(event) {
     event.preventDefault()
     const value = inputElement.value
@@ -23,7 +19,6 @@ buttonElement.onclick = function(event) {
         fetch(newUrl)
             .then(res => res.json())
             .then(data => {
-                console.log(data.results)
                 showMovies(data.results)        
             })
         }
@@ -39,13 +34,16 @@ function getMovies(url) {
     fetch(url)
         .then(res => res.json())
         .then(data => {
-            console.log(data.results)
             showMovies(data.results)
         })
 }
 
 function showMovies(data) {
     main.innerHTML = ''
+      
+
+
+    data.sort((a, b) => (a.vote_average > b.vote_average) ? -1 : 1)
 
     data.forEach(movie => {
         const { title, poster_path, vote_average,overview, id } = movie
