@@ -9,7 +9,7 @@
 
 <!-- gifs -->
 <h4 align="center">
- <a href="https://www.youtube.com/watch?v=p79pj5QCYxk"></a>
+ <a href="https://www.youtube.com/watch?v=p79pj5QCYxk">Video do app funcionando</a>
 	
   
  ---
