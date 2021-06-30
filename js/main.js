@@ -8,7 +8,6 @@ const treiler = 'https://www.youtube.com/results?search_query='
 
 const buttonElement = document.querySelector('#search')
 const inputElement = document.querySelector('#inputValue')
-const imgElement = document.querySelector('#main')
 
 buttonElement.onclick = function(event) {
     event.preventDefault()
@@ -27,8 +26,6 @@ buttonElement.onclick = function(event) {
             return getMovies(API_URL)
         }
     }
-    console.log(API_URL)
-
 
 getMovies(API_URL)
 
