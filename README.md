@@ -9,7 +9,7 @@
 
 <!-- gifs -->
 <h4 align="center">
- <p>vídeo de demonstração está em img, é o aquivo em mp4, você deve fazer o dowload dele</p>
+ <img src="https://www.youtube.com/watch?v=p79pj5QCYxk" alt="o video de demonstração esta no img, é o arquivo mp4">
 	
   
  ---
